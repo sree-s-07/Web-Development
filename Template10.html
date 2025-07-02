@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 10</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            height: 100vh;
+            width: 100%;
+        }
+
+        nav {
+            height: 85px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            background-color: transparent;
+            position: fixed;
+            background-color: blue;
+            border-radius: 0px 0px 10px 10px;
+            z-index: 1;
+        }
+
+        .logo {
+            height: 70px;
+            width: 30%;
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .logo img {
+
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+            margin: 0px 8px;
+            color: white;
+        }
+
+        .list {
+            height: 70px;
+            width: 70%;
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 10px;
+            font-size: 25px;
+            margin: 0px 20px;
+            color: white;
+        }
+
+        .list button {
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            margin-left: 40px;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: pink;
+            transition: (2.0);
+        }
+
+        .list button:hover {
+            transform: scale(1.2);
+        }
+
+
+        .mainbox {
+
+            height: 100vh;
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            background: linear-gradient(to top right, blue, skyblue);
+            border-radius: 0px 0px 150px 150px;
+        }
+
+        .left {
+
+            height: 450px;
+            width: 700px;
+            margin-left: 50px;
+            /* border: 2px solid black; */
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 30px 10px;
+
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 30px 10px;
+            color: white
+        }
+
+        p {
+            margin: 20px 0px;
+            margin: 30px 10px;
+        }
+
+
+        .searchbox input {
+            height: 30px;
+            width: 350px;
+            margin: 0px 10px;
+            padding: 5px;
+            border-radius: 20px;
+            border: none;
+
+        }
+
+        .searchbox input:hover {
+            border: none;
+        }
+
+        .searchbox button {
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            border: none;
+            background-color: pink;
+            margin-left: -165px;
+
+            cursor: pointer;
+        }
+
+
+
+
+        .right {
+
+            height: 450px;
+            width: 300px;
+            /* border: 2px solid black; */
+        }
+
+        .right img {
+            height: inherit;
+            width: inherit;
+            border-radius: 20px;
+
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: pink;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: -147px;
+            top: 200px;
+        }
+
+        .circle h1 {
+            padding: 10px;
+
+        }
+
+        .circle2 {
+            border-radius: 20px;
+            background-color: pink;
+            height: 30px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 180px;
+            top: -194px;
+        }
+
+        .circle2 h1 {
+            padding: 10px;
+
+        }
+
+        .boxes {
+            position: relative;
+            height: 250px;
+            width: 1250px;
+            /* border: 2px solid red; */
+            top: -94px;
+            left: 0px;
+            margin-left: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box {
+            height: 230px;
+            width: 220px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 2s;
+
+
+        }
+
+
+
+        .bi {
+            font-size: 100px;
+        }
+
+        .bi:hover {
+            color: pink;
+        }
+
+
+
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .section2 {
+            height: 100vh;
+            background-color: white;
+        }
+
+        .first {
+            height: 200px;
+            width: 100%;
+            /* border: 2px solid black;  */
+            margin-top: 150px;
+            display: flex;
+
+        }
+
+        .name {
+            height: inherit;
+            width: 70%;
+            /* border: 2px solid red; */
+
+        }
+
+        .button3 {
+            height: inherit;
+            width: 30%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button3 button {
+            height: 50px;
+            width: 130px;
+            background-color: pink;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .name h1 {
+            font-size: 30px;
+            color: rgb(225, 109, 128);
+            margin: 30px 100px;
+        }
+
+        .name h2 {
+            font-size: 60px;
+            margin: 30px 100px;
+
+        }
+
+        .second {
+            height: 300px;
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .price {
+            border-radius: 30px;
+            background-color: skyblue;
+            width: 60px;
+            position: relative;
+            text-align: center;
+            top: -186px;
+            right: -165px;
+        }
+
+        .action {
+            height: 270px;
+            width: 230px;
+            /* border: 2px solid red; */
+            border-radius: 15px;
+            background-color: rgb(213, 213, 213);
+            transition: 2s;
+        }
+
+        .action:hover {
+            transform: scale(1.2);
+        }
+
+        .up {
+            height: 70%;
+            /* border: 2px solid black; */
+            border-radius: 15px;
+        }
+
+        .down {
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid green; */
+            border-radius: 15px;
+        }
+
+        .down2 {
+            height: 40px;
+            width: 100%;
+            /* border: 1px solid yellow; */
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .down h4 {
+            font-size: 20px;
+            margin: 5px 10px;
+        }
+
+        .down2 h5 {
+            font-size: 25px;
+            margin: 0px 20px 0px 5px;
+
+        }
+
+        .bi1 {
+            font-size: 40px;
+            margin: 0px 5px 5px 0px;
+            width: 50px;
+            text-align: center;
+
+        }
+
+        .bi1:hover {
+            color: pink;
+            background-color: blue;
+            border-radius: 50%;
+
+        }
+
+        .third {
+            height: 600px;
+            width: 95%;
+            background-color: rgb(215, 212, 212);
+            border-radius: 130px;
+            margin: 0px auto;
+
+        }
+
+        .thirdtop {
+            width: 90%;
+            height: 140px;
+            position: relative;
+            top: 70px;
+            margin: 0px auto;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .topleft h1 {
+            font-size: 20px;
+            margin: 10px 0px 0px 10px;
+            color: rgb(239, 40, 74);
+
+        }
+
+        .button4 {
+            height: 50px;
+            width: 130px;
+            background-color: pink;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            padding: 10px;
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+            right: -700px;
+
+        }
+
+        .thirdbottom {
+            height: 350px;
+            width: 97%;
+            /* border: 1px solid black; */
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .three {
+            height: 300px;
+            width: 200px;
+            /* border: 1px solid black; */
+            background-color: white;
+            border-radius: 35px;
+            transition: 2s;
+
+        }
+
+        .three:hover {
+            transform: scale(1.1);
+        }
+
+        .threetop {
+            height: 70%;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .threebottom {
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid green; */
+        }
+
+        .threebottom h1 {
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .threebottom h2 {
+            font-size: 30px;
+            margin: -2px;
+            text-align: center;
+
+        }
+
+        .threebottom button {
+            height: 50px;
+            width: 130px;
+            margin: 9px 0px 0px 30px;
+            background-color: pink;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        .threebottom button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        @media (max-width: 1200px) {
+            .mainbox {
+                flex-direction: column;
+                height: auto;
+                padding: 40px 20px;
+                gap: 40px;
+            }
+
+            .left,
+            .right {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .boxes {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                gap: 15px;
+            }
+
+            .box {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+
+            .second {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .action {
+                width: 45%;
+            }
+
+            .thirdbottom {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .three {
+                width: 45%;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            .logo {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .list {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .list ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .list ul li {
+                margin: 10px 0;
+            }
+
+            .list button {
+                margin: 20px 0;
+            }
+
+            .circle,
+            .circle2 {
+                display: none;
+            }
+
+            .searchbox input {
+                width: 80%;
+                margin: 10px auto;
+                display: block;
+            }
+
+            .searchbox button {
+                margin: 10px auto;
+                display: block;
+                width: 80%;
+                position: static;
+            }
+
+            .price {
+                right: auto;
+                top: auto;
+                margin: 0 auto;
+            }
+
+            .thirdtop {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .button4 {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .box,
+            .action,
+            .three {
+                width: 90%;
+            }
+
+            h2,
+            h3 {
+                font-size: 24px;
+            }
+
+            .name h2 {
+                font-size: 36px;
+            }
+
+            .down2 h5 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/9a589cf8e44bfb409fae"
+                alt="">
+            <h1>LUGX</h1>
+
+        </div>
+        <div class="list">
+            <ul>
+                <li>Home</li>
+                <li>Our Shop</li>
+                <li>Product Details</li>
+                <li>Contact Us</li>
+            </ul>
+            <button>SIGN IN</button>
+        </div>
+    </nav>
+    <section>
+        <div class="mainbox">
+            <div class="left">
+                <h2>WELCOME TO LUGX</h2>
+                <h3>BEST GAMING SITE <br> EVER!</h3>
+                <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download
+                    and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+
+
+                <div class="searchbox">
+                    <input type="text" placeholder="Type Something">
+                    <button>SEARCH NOW</button>
+                </div>
+
+            </div>
+            <div class="circle">
+                <h1>-40%</h1>
+            </div>
+            <div class="right">
+                <img src="https://assets.mycast.io/posters/assasin-s-creed-ezio-auditore-fan-casting-poster-29039-small.jpg?1582662227"
+                    alt="">
+            </div>
+            <div class="circle2">
+                <h1>$22</h1>
+            </div>
+
+
+
+        </div>
+        <div class="boxes">
+            <div class="box box1">
+                <i class="bi bi-cloud-download"></i>
+                <h1>FREE STORAGE</h1>
+
+            </div>
+            <div class="box box2">
+                <i class="bi bi-person-circle"></i>
+                <h1>USER MORE</h1>
+
+            </div>
+            <div class="box box3">
+                <i class="bi bi-play-circle"></i>
+                <h1>REPLAY READY</h1>
+
+            </div>
+            <div class="box box4">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <h1>EASY LAYOUT</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="first">
+            <div class="name">
+                <h1>TRENDING</h1>
+                <H2>Trending Games</H2>
+
+            </div>
+            <div class="button3">
+                <button>VIEW ALL</button>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="action action1">
+                <div class="up">
+                    <img src="https://pbs.twimg.com/media/DuZK9l_VsAAN2JT.jpg" alt="">
+                    <div class="price">
+                        <h1>$120</h1>
+                    </div>
+                </div>
+
+                <div class="down">
+                    <h4>Action</h4>
+                    <div class="down2">
+                        <h5>Assain Creed</h5>
+                        <i class="bi1 bi-lock"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="action action2">
+                <div class="up">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtjVF2G8QUnl2dZlBAq5Mq5w_ba_oyxE8b2WnjqCgm6zUr027d"
+                        alt="">
+
+                </div>
+                <div class="down">
+                    <h4>Action</h4>
+                    <div class="down2">
+                        <h5>Assain Creed</h5>
+                        <i class="bi1 bi-lock"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="action action3">
+                <div class="up">
+                    <img src="https://pbs.twimg.com/profile_images/1483699448870223874/wUT9I65b_400x400.jpg" alt="">
+
+                </div>
+                <div class="down">
+                    <h4>Action</h4>
+                    <div class="down2">
+                        <h5>Assain Creed</h5>
+                        <i class="bi1 bi-lock"></i>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+            <div class="action action4">
+                <div class="up">
+                    <img src="https://media.karousell.com/media/photos/products/2024/8/23/__16_16_vcf2060b_verycool_trik_1724376325_defc8058_progressive"
+                        alt="">
+
+                </div>
+                <div class="down">
+                    <h4>Action</h4>
+                    <div class="down2">
+                        <h5>Assain Creed</h5>
+                        <i class="bi1 bi-lock"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="section3">
+        <div class="third">
+            <div class="thirdtop">
+                <div class="topleft">
+                    <h1>TOP GAME</h1>
+                    <H2>MOST PLAYED</H2>
+
+                </div>
+                <div class="topright">
+                    <button class="button4">VIEW ALL</button>
+                </div>
+
+            </div>
+            <div class="thirdbottom">
+                <div class="three bottom1">
+                    <div class="threetop">
+                        <img src="https://i.ytimg.com/vi/iAOlaKhQ_1E/sddefault.jpg" alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+                <div class="three bottom2">
+                    <div class="threetop">
+                        <img src="https://rukminim2.flixcart.com/image/300/300/l4bn5ow0/physical-game/2/o/h/no-complete-games-2cap-players-unknown-battleground-pubg-pc-game-original-imagf98kfqs2zgnf.jpeg"
+                            alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+                <div class="three bottom3">
+                    <div class="threetop">
+                        <img src="https://cdn2.steamgriddb.com/thumb/dd60a00b5f0f64e55a453de8505761f7.jpg" alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+                <div class="three bottom4">
+                    <div class="threetop">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMFIpK1i0RKayI0F9GT6ed2ySKJWzxdx2_zYrLcVXNi2uN3DV4"
+                            alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+                <div class="three bottom5">
+                    <div class="threetop">
+                        <img src="https://staticg.sportskeeda.com/editor/2022/05/74d72-16527330299360-1920.jpg?w=640"
+                            alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+                <div class="three bottom6">
+                    <div class="threetop">
+                        <img src="https://img.etimg.com/thumb/width-420,height-315,imgsize-42678,resizemode-75,msid-110826552/news/international/us/destiny-2s-salvations-edge-raid-all-you-may-want-to-know-about-release-date-start-time-bosses-and-more.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="threebottom">
+                        <h1>Adventure</h1>
+                        <h2>Assain Creed</h2>
+                        <button>Explore</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
